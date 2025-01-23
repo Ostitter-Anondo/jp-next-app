@@ -9,6 +9,9 @@ import Link from "next/link";
 const Navbar = ({ authStat = false }) => {
 	const links = (
 		<>
+			<li>
+				<Link href={"/"}>Home</Link>
+			</li>
 			{authStat ? (
 				<li>
 					<Link href={"/dashboard"}>Dashboard</Link>
