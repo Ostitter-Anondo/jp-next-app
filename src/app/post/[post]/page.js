@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "@/components/Navbar";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -14,9 +13,6 @@ const Page = () => {
 	console.log(post);
 	return (
     <>
-    <header>
-      <Navbar />
-    </header>
 		<div className="w-11/12 mx-auto">
 			<h1 className="font-extrabold text-3xl text-center">{post.title}</h1>
 			<p>{post.body}</p>
